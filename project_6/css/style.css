@@ -250,6 +250,12 @@ body {
   color: #722448;
 }
 
+.top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
 /*content部分*/
 
 .swiper-container {

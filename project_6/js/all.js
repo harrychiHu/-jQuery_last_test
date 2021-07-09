@@ -26,5 +26,14 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
-  
+
+  $(".top").click(function (e) {
+    e.preventDefault();
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
 });
