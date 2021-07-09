@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*layout部分*/
+
+body {
+  font-family: Microsoft JhengHei;
+}
+
+.wrap {
+  width: 1005px;
+  margin: 0 auto;
+}
+.link {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 5px;
+}
+
+.facebook_text {
+  color: #4460a0;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #00aaec;
+}
+
+.facebook {
+  border-right: 1px #adadad solid;
+  padding: 0px 10px;
+}
+
+.twitter {
+  padding: 0px 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 a {
+  width: 175px;
+  height: 40px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.title ul li a {
+  color: #00cc99;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 1s;
+}
+
+.title ul li a:hover {
+  color: #005641;
+}
+
+.menu {
+  display: flex;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu ul li {
+  margin-top: 10px;
+}
+
+.menu ul li a {
+  font-size: 15px;
+}
+
+.menu ul {
+  display: none;
+}
+
+/*.menu > li:hover ul {
+  display: block;
+}*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 50px 20px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.footer a {
+  color: #e54991;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #722448;
+}
+
+/*content部分*/
+
+.swiper-container {
+  width: 1001px;
+  height: 346px;
+}
+
+.class {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.class img {
+  transition: all 1s;
+}
+
+.class img:hover {
+  -webkit-filter: grayscale(50%); /* Safari */
+  filter: grayscale(50%);
+  transform: scale(1.1);
+}
+
+.class > li {
+  margin-top: 70px;
+  box-shadow: 3px 3px 10px #adadad;
+  margin-right: 30px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.class h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+.class p {
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 550;
+}
+
+.jQuery_list {
+  padding: 0px 30px;
+}
+
+.jQuery_list li {
+  border: transparent 1px solid;
+  text-align: left;
+  list-style: disc;
+  margin: 10px 0px;
+  font-size: 17px;
+  font-weight: 550;
+  box-shadow: 3px 3px 3px transparent;
+}
+
+#lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #006000;
+  filter: alpha(Opacity=80);
+  opacity: 0.3;
+  display: none;
+}
+
+.form {
+  margin: 65px 0px;
+  text-align: center;
+}
+
+.form h3 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.form table {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.form th,
+.form td {
+  padding: 10px 50px;
+  border-bottom: #adadad 1px solid;
+}
+
+.form th {
+  border-top: #adadad 1px solid;
+  background-color: #f7f7f7;
+}
+
+.good {
+  color: #00cc99;
+}
+
+.address {
+  padding-top: 40px;
+  background-image: url(../img/footer_bgc_1.png);
+  background-repeat: repeat-x;
+  background-color: #00967a;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.address h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.address form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.address label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.address input {
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.adress-box-1 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.memo {
+  width: 460px;
+}
+.btn {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #00cc99;
+  width: 50px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.btn:hover {
+  background-color: #005641;
+}
